@@ -42,7 +42,7 @@ def wavelength(inputfile):
     plt.ylabel("Spannung U / V")
     plt.ylim(1.,9.5)
     ax = plt.axes()
-    legend = plt.legend(("Fit U(d)","Messwerte"), loc = 'upper right')
+    plt.legend(("Fit U(d)","Messwerte"), loc = 'upper right')
     plt.text(0.015, 0.93,
              'U(d) = %.2f * sin(2*pi*d/%.2f + %.2f) + %.2f' % (p1[0],p1[1],p1[2],p1[3]),
              fontsize=11,
@@ -83,7 +83,7 @@ def lecher(inputfile):
     plt.ylabel("Spannung U / V")
     plt.ylim(1.,8.5)
     ax = plt.axes()
-    legend = plt.legend(("Fit U(d)","Messwerte"),loc='lower right')
+    plt.legend(("Fit U(d)","Messwerte"),loc='lower right')
     plt.text(0.01, 0.93,
              'U(d) = %.2f*sin(2*pi/%.2f*d+%.2f) + %.2f*exp(%.2f*d+%.2f)' % (p1[0],p1[1],p1[2],p1[3],p1[4],p1[5]),
              #'U(d) = %.3f*exp(%.3f*d+%.3f)' % (p1[0],p1[1],p1[2]),
